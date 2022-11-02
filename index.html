@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+    <header>
+      <h1>Guessing Game</h1>
+    </header>
+  
+
+    <script src='guessing-game.js' defer></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+                
+    <!-- the MAIN.CSS file is linked here -->
+  </head>
+
+  <body>
+    <h2>Guess a number between 1-100</h2>
+    <h3>Let's see if you can beat my AI mind</h3>
+    <h3>I am generous.. You have 5 tries.</h3>
+    <form id="inputForm">
+      <input id="numberInput" placeholder="guess here"/>
+
+      <button id="enter">submit</button>
+      <button onclick="retry()" id="reset" >redeem yourself!</button>
+      <button id="hint">need some help?</button>
+    
+    </form>
+      <div id="container"></div>
+      <p id="message1">What you guessed are: </p>
+      <p id="guess"></p>
+      
+   
+    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+  </body>
+
+</html>
